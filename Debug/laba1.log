@@ -1,0 +1,6 @@
+﻿  matrix.c
+  main.c
+d:\laba1\laba1\main.c(17): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Generating Code...
+  laba1.vcxproj -> D:\laba1\Debug\laba1.exe
+  laba1.vcxproj -> D:\laba1\Debug\laba1.pdb (Partial PDB)
