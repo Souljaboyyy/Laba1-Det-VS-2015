@@ -1,6 +1,5 @@
-﻿  matrix.c
-  main.c
-d:\laba1\laba1\main.c(17): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
-  Generating Code...
+﻿  main.c
+d:\laba1\laba1\main.c(19): warning C4133: '=': incompatible types - from 'int *' to 'line *'
+d:\laba1\laba1\main.c(30): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
   laba1.vcxproj -> D:\laba1\Debug\laba1.exe
   laba1.vcxproj -> D:\laba1\Debug\laba1.pdb (Partial PDB)
