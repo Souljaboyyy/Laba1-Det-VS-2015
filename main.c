@@ -53,7 +53,7 @@ int main() {
 	Clear(&A);
 	end = time(NULL);
 	printf("Programm worked %f sec.\n", difftime(end, start));
-	if (difftime(end, start) > 5)
+	if (difftime(end, start) > 60)
 		printf("The determinant was counted for more than a minute\n");
 	system("pause");
 	return 0;
