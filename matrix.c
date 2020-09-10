@@ -33,7 +33,7 @@ int Determinant(Matrix A) {
 			free(B.x);
 		}
 	}
-	else {
+	else /*if(size==2)*/ {
 		result = A.x[0].y[0] * A.x[1].y[1] - A.x[0].y[1] * A.x[1].y[0];
 	}
 	return result;

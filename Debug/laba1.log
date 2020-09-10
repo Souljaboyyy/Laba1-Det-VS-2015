@@ -1,5 +1,6 @@
 ﻿  main.c
-d:\laba1\laba1\main.c(19): warning C4133: '=': incompatible types - from 'int *' to 'line *'
-d:\laba1\laba1\main.c(30): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+d:\laba1\laba1\main.c(21): warning C4133: '=': incompatible types - from 'int *' to 'line *'
+d:\laba1\laba1\main.c(32): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+d:\laba1\laba1\main.c(46): warning C4101: 't': unreferenced local variable
   laba1.vcxproj -> D:\laba1\Debug\laba1.exe
   laba1.vcxproj -> D:\laba1\Debug\laba1.pdb (Partial PDB)

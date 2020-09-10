@@ -1,7 +1,7 @@
 ﻿  main.c
-main.c(20): warning C4133: '=': incompatible types - from 'int *' to 'line *'
-main.c(31): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
-main.c(45): warning C4101: 't': unreferenced local variable
+main.c(21): warning C4133: '=': incompatible types - from 'int *' to 'line *'
+main.c(32): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+main.c(46): warning C4101: 't': unreferenced local variable
   Generating code
   1 of 14 functions ( 7.1%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation

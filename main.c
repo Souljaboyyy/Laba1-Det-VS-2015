@@ -10,6 +10,7 @@ int main() {
 	printf("1-Command line\n");
 	printf("2-File\n");
 	printf("3-Random\n");
+//	printf("for matrices of order =>12 the determinant will be considered more than a minute\n");
 	scanf_s("%d", &vibor);
 	if (vibor == 1)
 		IntputMatrix(&A);
@@ -29,7 +30,7 @@ int main() {
 	}
 	if (vibor == 3) {
 		srand(time(0));
-		A.size = rand() % 10;
+		A.size = 2+rand() % 10;
 		A.x = (line*)malloc(A.size * sizeof(line*));
 		for (int i = 0; i < A.size; i++) {
 			A.x[i].y = (int*)malloc(A.size * sizeof(int));
@@ -53,8 +54,32 @@ int main() {
 	Clear(&A);
 	end = time(NULL);
 	printf("Programm worked %f sec.\n", difftime(end, start));
-	if (difftime(end, start) > 60)
-		printf("The determinant was counted for more than a minute\n");
+	int p = 2;
+	while (1) {
+		A.size = p;
+		A.x = (line*)malloc(A.size * sizeof(line*));
+		for (int i = 0; i < A.size; i++) {
+			A.x[i].y = (int*)malloc(A.size * sizeof(int));
+		}
+		for (int t = 0; t < p; t++) 
+			//A.size = p;
+			for (int u = 0; u < p; u++) {
+				A.x[t].y[u] = rand() % 10;
+			}
+		start = time(NULL);
+		Determinant(A);
+		end = time(NULL);
+		Clear(&A);
+		if (difftime(end, start) < 60) {
+			p++;
+			printf("%lf\n",difftime(end, start));
+		}
+				else {
+					printf("time is %lf for matrices of order =>%d the determinant will be considered more than a minute\n", difftime(end, start), p);
+					break;
+				
+		}
+	}
 	system("pause");
 	return 0;
 }
